@@ -1,4 +1,5 @@
 FROM alpine:latest
+LABEL org.opencontainers.image.source="https://github.com/xjasonlyu/docker-kea-dhcp4"
 
 RUN apk add --no-cache kea-dhcp4 \
 	&& mkdir -p /run/kea
