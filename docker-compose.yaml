@@ -3,7 +3,7 @@ services:
   kea-dhcp4:
     image: xjasonlyu/kea-dhcp4:latest
     volumes:
-      - '$PWD/kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf'
+      - ./kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
     restart: always
     network_mode: host
     container_name: kea-dhcp4
